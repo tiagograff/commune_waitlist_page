@@ -1,1 +1,27 @@
 @import 'variables'
+
+.header
+    display: flex
+    justify-content: space-between
+    &-logo
+        &-img
+            max-width: 200px
+    &-nav
+        &-list
+            display: flex
+            justify-content: center
+            align-items: center
+            &-item
+                &-link
+                    margin-left: 15px
+                    color: $color-gray
+                    &:hover
+                        color: $color-purple
+                &-link.link-active
+                    padding: 20px 20px
+                    border: 1px solid $color-purple
+                    background-color: $color-purple
+                    color: $color-white
+                    border-radius: 10px
+                    &:hover
+                        background-color: $color-black-purple
