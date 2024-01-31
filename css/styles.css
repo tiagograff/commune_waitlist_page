@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap");
 .header {
   display: flex;
   justify-content: space-between; }
@@ -58,14 +59,15 @@
       color: #353252;
       line-height: 3rem; }
     .main-container-text-subtitle {
-      font-size: 1rem;
-      color: #545454; }
+      font-size: 0.95rem;
+      color: #545454;
+      font-weight: 600; }
     .main-container-text-email {
       display: flex;
       flex-direction: row;
       margin-top: 10px; }
       .main-container-text-email-input {
-        padding: 10px;
+        padding: 10px 80px 10px 20px;
         width: auto;
         max-width: 300px;
         border: 1px solid #a9a9a9;
@@ -85,6 +87,17 @@
     margin-left: 100px; }
     .main-container-logo-img {
       max-width: 250px; }
+
+.footer {
+  display: flex;
+  flex-direction: column; }
+  .footer-text {
+    color: #545454;
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .footer-companies-icons {
+    margin-right: 10px;
+    width: 40px; }
 
 * {
   margin: 0;
