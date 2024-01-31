@@ -1,0 +1,61 @@
+@import 'variables'
+
+.main
+    &-container
+        margin: 30px 0 10px 0
+        display: flex
+        justify-content: center
+        align-items: center
+        &-text
+            display: flex
+            flex-direction: column
+            &-learnMore
+                border: none
+                border-radius: 25px
+                background-color: $color-purple
+                color: $color-off-white
+                font-weight: 100
+                padding: 5px 10px
+                width: auto
+                max-width: 450px
+                text-align: center
+                &:hover
+                    background-color: $color-black-purple
+                &-link
+                    color: $color-off-white
+                    font-weight: 100
+                    text-decoration: underline
+                    &:hover
+                        color: $color-white
+                        text-decoration: none
+            &-title
+                margin: 10px 0
+                font-size: 3rem
+                color: $color-black-purple
+                line-height: 3rem
+            &-subtitle
+                font-size: 1rem
+                color: $color-gray
+            &-email
+                display: flex
+                flex-direction: row
+                margin-top: 10px
+                &-input
+                    padding: 05px
+                    width: auto
+                    max-width: 300px
+                    border: 1px solid $color-gray2
+                    border-radius: 5px
+                &-button
+                    padding: 10px
+                    width: auto
+                    max-width: 150px
+                    border: none
+                    background-color: $color-purple
+                    border-radius: 5px
+                    color: $color-white
+                    margin-left: 10px
+        &-logo
+            margin-left: 50px
+            &-img
+                max-width: 250px
