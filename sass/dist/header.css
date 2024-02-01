@@ -2,6 +2,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header-logo-img {
   max-width: 200px;
@@ -10,6 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 850px) {
+  .header-nav-list {
+    display: none;
+  }
 }
 .header-nav-list-item-link {
   margin-left: 15px;
@@ -27,4 +33,23 @@
 }
 .header-nav-list-item-link.link-active:hover {
   background-color: #353252;
+}
+.header-navHamburguer {
+  display: none;
+}
+@media (max-width: 850px) {
+  .header-navHamburguer {
+    display: block;
+    margin-left: auto;
+  }
+}
+.header-navHamburguer-img {
+  align-self: center;
+}
+.header-navHamburguer-list {
+  display: flex;
+  flex-direction: column;
+}
+.header-navHamburguer-list-item {
+  margin-top: 10px;
 }

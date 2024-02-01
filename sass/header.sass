@@ -1,8 +1,10 @@
 @import 'variables'
+@import 'mixins'
 
 .header
     display: flex
     justify-content: space-between
+    align-items: center
     &-logo
         &-img
             max-width: 200px
@@ -11,6 +13,8 @@
             display: flex
             justify-content: center
             align-items: center
+            @include screen850
+                display: none
             &-item
                 &-link
                     margin-left: 15px
@@ -25,3 +29,18 @@
                     border-radius: 10px
                     &:hover
                         background-color: $color-black-purple
+    &-navHamburguer
+        display: none
+        @include screen850
+            display: block
+            margin-left: auto
+        &-img
+            align-self: center
+        &-list
+            display: flex
+            flex-direction: column
+            &-item
+                margin-top: 10px
+                &-link 
+                    
+
