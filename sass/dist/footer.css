@@ -3,6 +3,16 @@
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 850px) {
+  .footer {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 570px) {
+  .footer {
+    margin-top: 10px;
+  }
+}
 .footer-text {
   color: #545454;
   font-weight: 700;

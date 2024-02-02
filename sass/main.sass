@@ -1,4 +1,5 @@
 @import 'variables'
+@import 'mixins'
 
 .main
     &-container
@@ -9,6 +10,8 @@
         &-text
             display: flex
             flex-direction: column
+            @include screen850
+                text-align: center
             &-learnMore
                 margin-bottom: 10px
                 border: none
@@ -16,10 +19,14 @@
                 background-color: $color-purple
                 color: $color-off-white
                 font-weight: 100
-                padding: 5px 10px
+                padding: 10px 20px
                 width: auto
                 max-width: 450px
                 text-align: center
+                @include screen850
+                    margin: 10px auto
+                @include screen570
+                    max-width: 280px
                 &:hover
                     background-color: $color-black-purple
                 &-link
@@ -34,20 +41,49 @@
                 font-size: 3rem
                 color: $color-black-purple
                 line-height: 3rem
+                @include screen850
+                    font-size: 4rem
+                    line-height: 4rem
+                @include screen570
+                    font-size: 10vw
+                    max-width: auto
+                    word-wrap: break-word
+                    line-height: 12vw
             &-subtitle
                 font-size: 0.95rem
                 color: $color-gray
                 font-weight: 600
+                @include screen850
+                font-size: 1.25rem
+                margin-bottom: 20px
+                @include screen570
+                    font-size: 5vw
+                    word-wrap: break-word
             &-email
                 display: flex
                 flex-direction: row
                 margin-top: 10px
+                @include screen850
+                    justify-content: center
+                @include screen570
+                    flex-direction: column
                 &-input
                     padding: 10px 80px 10px 20px
                     width: auto
                     max-width: 300px
                     border: 1px solid $color-gray2
                     border-radius: 5px
+                    @include screen850
+                        font-size: 1.2rem
+                        width: 350px
+                        max-width: 350px
+                    @include screen570
+                        justify-content: center
+                        min-width: 200px
+                        max-width: 250px
+                        font-size: 1rem
+                        padding: 10px 20px
+                        margin: 10px auto
                 &-button
                     padding: 10px
                     width: auto
@@ -55,11 +91,23 @@
                     border: none
                     background-color: $color-purple
                     border-radius: 5px
-                    color: $color-white
+                    color: $color-off-white
                     margin-left: 10px
                     &:hover
                         background-color: $color-black-purple
+                    @include screen850
+                        font-size: 1.1rem
+                        width: 300px
+                    @include screen570
+                        justify-content: center
+                        min-width: 200px
+                        max-width: 250px
+                        font-size: 1rem
+                        padding: 10px 20px
+                        margin: 10px auto
         &-logo
             margin-left: 100px
+            @include screen850
+                display: none
             &-img
                 max-width: 250px

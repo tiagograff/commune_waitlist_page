@@ -16,6 +16,9 @@ body
     height: calc(100vh - 50px)
     background-color: $color-white
     padding: 25px
+    @include screen570
+        padding: 10px
+        height: calc(100vh - 20px)
 
 .container
     background-color: $color-off-white
@@ -23,3 +26,6 @@ body
     border-radius: 15px
     padding: 40px 80px
     height: 90vh
+    @include screen570
+        padding: 20px 40px
+        height: calc( 100vh - 10px )
